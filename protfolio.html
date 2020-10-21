@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate() {
+            var username = document.getElementById("user");
+            var password = document.getElementById("pass");
+            if (username.value.trim() == "" || password.value.trim() == "") {
+                alert("no blank values");
+                return false;
+            } else if (password.value.trim().length < 8) {
+                alert("enter more stronger password")
+                return false;
+
+            } else {
+                return true;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <ul>
+        <img src="rob.svg" width="90px" height="40px">
+        <li><a href="#">home</a></li>
+        <li><a href="#">prototype</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">mywork</a></li>
+        <li><a href="#">sigin</a></li>
+    </ul>
+    <div class="land">
+        <img class="pic" src="web.svg">
+        <p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+            add one idea at a time to your broader argument A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences
+            that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic
+            unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument A paragraph</p>
+        <button>readmore</button>
+    </div>
+    <div class="pro">
+        <div class="card">
+            <img src="img_avatar.png" alt="avatar" width="100%">
+            <div class="container">
+                <h4><br>front<br></h4>
+                <p>frontend developer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img_avatar.png" alt="avatar" width="100%">
+            <div class="container">
+                <h4><br>front<br></h4>
+                <p>frontend developer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img_avatar.png" alt="avatar" width="100%">
+            <div class="container">
+                <h4><br>front<br></h4>
+                <p>frontend developer</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <form onsubmit="return validate()">
+            <div class="foot">
+                <div class="head">
+                    <h1>@all copyright reserved</h1>
+                </div>
+                <div class="login">
+                    <label>username:</label>
+                    <input id="user" class="user" type="text" placeholder="username"><br><br>
+                    <label>password:</label>
+                    <input id="pass" class="pass" type="password" placeholder="password"><br><br>
+                    <input type="submit" placeholder="submit">
+                </div>
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>
