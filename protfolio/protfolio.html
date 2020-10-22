@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function validate() {
+            var username = document.getElementById("user");
+            var password = document.getElementById("pass");
+            if (username.value.trim() == "" || password.value.trim() == "") {
+                alert("no blank values");
+                return false;
+            } else if (password.value.trim().length < 8) {
+                alert("enter more stronger password")
+                return false;
+
+            } else {
+                return true;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="con1">
+        <ul>
+            <img src="rob.svg" width="90px" height="40px">
+            <li><a href="#">home</a></li>
+            <li><a href="#">prototype</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">mywork</a></li>
+            <li><a href="#">sigin</a></li>
+        </ul>
+    </div>
+    <div class="land">
+        <button>myworks</button>
+        <div class="par">
+            <p>Hai i am nishanth... i am a frontend developer</p>
+            <div class="img">
+                <img class="pic" src="pic.JPG">
+            </div>
+        </div>
+        <div class="icon">
+            <a href="https://instagram.com/nishanthcs_0002?igshid=1vpylyqlr28kx"><i class="fa fa-instagram fa-ins"></i></a>
+            <a href="https://github.com/Nishanth2000"><i class="fa fa-github fa-git"></i></a>
+            <a href="https://twitter.com/Nishant48299615?s=08"><i class="fa fa-twitter fa-t"></i></a>
+            <a href="https://www.youtube.com/"> <i class="fa fa-youtube fa-y"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100021372774308"></a> <i class="fa fa-facebook fa-lg"></i>
+            </a>
+        </div>
+    </div>
+    <div class="con">
+        <h1>key skills</h1>
+        <div class="cons">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JavaScript</li>
+            <li class="ng">Adobe Xd</li>
+        </div>
+    </div>
+    <!-- <form onsubmit="return validate()">
+        <div class="foot">
+            <h1>Login</h1>
+            <div class="login">
+                <div class="textbox">
+                    <i class="fa fa-user fa-user"></i>
+                    <input id="user" class="user" type="text"><br><br>
+                </div>
+                <div class="textbox">
+                    <i class="fa fa-lock fa-pass"></i>
+                    <input id="pass" class="pass" type="password"><br><br>
+                </div>
+                <button>submit</button>
+            </div>
+        </div>
+    </form> -->
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">prototype</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">mywork</a></li>
+                <li><a href="#">sigin</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Follow us on</h4>
+
+            <div class="social-icons">
+                <a href="https://instagram.com/nishanthcs_0002?igshid=1vpylyqlr28kx"><i class="fa fa-instagram fa-ins"></i></a>
+                <a href="https://github.com/Nishanth2000"><i class="fa fa-github fa-git"></i></a>
+                <a href="https://twitter.com/Nishant48299615?s=08"><i class="fa fa-twitter fa-t"></i></a>
+                <a href="https://www.youtube.com/"> <i class="fa fa-youtube fa-y"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100021372774308"><i class="fa fa-facebook fa-lg"></i>
+                </a>
+            </div>
+            <p>This website is managed by Live Blogger</p>
+        </div>
+
+
+    </div>
+    </div>
+</footer>
+
+</html>
