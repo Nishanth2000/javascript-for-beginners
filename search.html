@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="search" placeholder="search">
+        <div id="list">
+            <span>apple</span>
+            <span>amazon</span>
+            <span>microsoft</span>
+            <span>flipcart</span>
+            <span>jio</span>
+            <span>google</span>
+
+        </div>
+    </div>
+    <script>
+        let search = document.getElementById('search');
+        let Items = document.getElementsByTagName('span');
+        search.addEventListener('keyup', function() {
+            let filter = search.value.toUpperCase();
+            for (let i = 0; i < Items.length; i++) {
+                let text = Items[i].innerText.toUpperCase();
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    Items[i].style.display = "";
+                } else {
+                    Items[i].style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
