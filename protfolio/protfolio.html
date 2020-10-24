@@ -10,23 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function validate() {
-            var username = document.getElementById("user");
-            var password = document.getElementById("pass");
-            if (username.value.trim() == "" || password.value.trim() == "") {
-                alert("no blank values");
-                return false;
-            } else if (password.value.trim().length < 8) {
-                alert("enter more stronger password")
-                return false;
-
-            } else {
-                return true;
-            }
-
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -41,7 +25,7 @@
         </ul>
     </div>
     <div class="land">
-        <button>myworks</button>
+        <button><a href="#skill">myskills</a></button>
         <div class="par">
             <p>Hai i am nishanth... i am a frontend developer</p>
             <div class="img">
@@ -57,6 +41,7 @@
             </a>
         </div>
     </div>
+    <a name="skill"></a>
     <div class="con">
         <h1>key skills</h1>
         <div class="cons">
@@ -86,14 +71,30 @@
 <footer>
     <div class="footer-container">
         <div class="footer-left">
-            <h4>Quick Links</h4>
+            <form onsubmit="return validate()">
+                <div class="foot">
+                    <h1>Login</h1>
+                    <div class="login">
+                        <div class="textbox">
+                            <i class="fa fa-user fa-user"></i>
+                            <input id="user" class="user" type="text"><br><br>
+                        </div>
+                        <div class="textbox">
+                            <i class="fa fa-lock fa-pass"></i>
+                            <input id="pass" class="pass" type="password"><br><br>
+                        </div>
+                        <button>submit</button>
+                    </div>
+                </div>
+            </form>
+            <!-- <h4>Quick Links</h4>
             <ul>
                 <li><a href="#">home</a></li>
                 <li><a href="#">prototype</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">mywork</a></li>
                 <li><a href="#">sigin</a></li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="footer-right">
@@ -107,7 +108,17 @@
                 <a href="https://www.facebook.com/profile.php?id=100021372774308"><i class="fa fa-facebook fa-lg"></i>
                 </a>
             </div>
-            <p>This website is managed by Live Blogger</p>
+            <h4>Quick Links</h4>
+            <div class="fquick">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Prototype</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#skill">Mywork</a></li>
+                <li><a href="#">Sigin</a></li>
+            </div>
+            <div class="p">
+                <p>@2020 your company.All right Reserved</p>
+            </div>
         </div>
 
 
